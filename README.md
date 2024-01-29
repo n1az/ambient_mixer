@@ -1,8 +1,5 @@
-# n1az.github.io
-# Project name: PhySci
-This is a web application based project which is now my github page.
+# Project name: Ambient Mixer
 
-https://n1az.github.io
 
 Here you can :--------
 
