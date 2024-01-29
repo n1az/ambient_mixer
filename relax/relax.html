@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Relaxed Ambient Sounds</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <ul class="nav">
+        <li><a class="active" href="#home">Relax</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+    </ul>
+    <div class="box1">
+        <div class="title">
+            <h1>Relaxed Amibient Sounds</h1>
+            <br>
+            <br>
+        </div>
+
+        <div class="sub-title">
+            <h2 id="demo">Mix-up to wash away your distraction!</h2>
+            <br>
+            <br>
+        </div>
+        <div class="mainPlay">
+            <button class="mainControl" id="controler" onclick="mainControlfunction()" title="Play or Pause the Relaxing sound">
+				
+			</button>
+        </div>
+        <div class="soundlist">
+            <div class="soundContainer">
+                <div class="inner">
+                    <button class="imageContainer">
+						<div class="loader">
+							<img src="rain.png" height="82" width="82" alt="Loading Icon">
+						</div>
+					</button>
+                    <h3>Rain</h3>
+                    <div class="soundSlider">
+                        <span>
+							<input type="range" oninput="setVolumeRain()" class="slider" id="rainV" min="0" max="1" step=".02" value=".5">
+						</span>
+                    </div>
+                </div>
+                <div class="soundPlayer">
+                    <div>
+                        <audio id="rain" preload="auto" loop><source class="mp4rain" src="rain.mp3" type="audio/mp3"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="soundContainer">
+                <div class="inner">
+                    <button class="imageContainer">
+						<div class="loader">
+							<img src="storm.png" height="82" width="82" alt="Loading Icon">
+						</div>
+					</button>
+                    <h3>Thunder</h3>
+                    <div class="soundSlider">
+                        <span>
+							<input type="range" oninput="setVolumeStorm()" class="slider" id="thunderV" min="0" max="1" step=".02" value=".5">
+						</span>
+                    </div>
+                </div>
+                <div class="soundPlayer">
+                    <div>
+                        <audio id="storm" preload="auto" loop><source class="mp4rain" src="thunder.mp3" type="audio/mp3"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="soundContainer">
+                <div class="inner">
+                    <button class="imageContainer">
+						<div class="loader">
+							<img src="wind.png" height="82" width="82" alt="Loading Icon">
+						</div>
+					</button>
+                    <h3>Water</h3>
+                    <div class="soundSlider">
+                        <span>
+							<input type="range" oninput="setVolumeWind()" class="slider" id="windV" min="0" max="1" step=".02" value=".5">
+						</span>
+                    </div>
+                </div>
+                <div class="soundPlayer">
+                    <div>
+                        <audio id="wind" preload="auto" loop><source class="mp4rain" src="water.mp3" type="audio/mp3"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="soundContainer">
+                <div class="inner">
+                    <button class="imageContainer">
+						<div class="loader">
+							<img src="grass.png" height="82" width="82" alt="Loading Icon">
+						</div>
+					</button>
+                    <h3>Crickets</h3>
+                    <div class="soundSlider">
+                        <span>
+							<input type="range" oninput="setVolumeCricket()" class="slider" id="cricketV" min="0" max="1" step=".02" value=".5">
+						</span>
+                    </div>
+                </div>
+                <div class="soundPlayer">
+                    <div>
+                        <audio id="cricket" preload="auto" loop><source class="mp4rain" src="crickets.mp3" type="audio/mp3"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="soundContainer">
+                <div class="inner">
+                    <button class="imageContainer">
+						<div class="loader">
+							<img src="flood.png" height="82" width="82" alt="Loading Icon">
+						</div>
+					</button>
+                    <h3>Thunderstorm</h3>
+                    <div class="soundSlider">
+                        <span>
+							<input type="range" oninput="setVolumeFlood()" class="slider" id="stormV" min="0" max="1" step=".02" value=".5">
+						</span>
+                    </div>
+                </div>
+                <div class="soundPlayer">
+                    <div>
+                        <audio id="flood" preload="auto" loop><source class="mp4rain" src="flood.mp3" type="audio/mp3"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="soundContainer">
+                <div class="inner">
+                    <button class="imageContainer">
+						<div class="loader">
+							<img src="chick.png" height="82" width="82" alt="Loading Icon">
+						</div>
+					</button>
+                    <h3>Birds</h3>
+                    <div class="soundSlider">
+                        <span>
+							<input type="range" oninput="setVolumeBirds()" class="slider" id="birdV" min="0" max="1" step=".02" value=".5">
+						</span>
+                    </div>
+                </div>
+                <div class="soundPlayer">
+                    <div>
+                        <audio id="birds" preload="auto" loop><source class="mp4rain" src="birds.mp3" type="audio/mp3"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="soundContainer">
+                <div class="inner">
+                    <button class="imageContainer">
+						<div class="loader">
+							<img src="bonfire.png" height="82" width="82" alt="Loading Icon">
+						</div>
+					</button>
+                    <h3>Bonfire</h3>
+                    <div class="soundSlider">
+                        <span>
+							<input type="range" oninput="setVolumeFire()" class="slider" id="fireV" min="0" max="1" step=".02" value=".5">
+						</span>
+                    </div>
+                </div>
+                <div class="soundPlayer">
+                    <div>
+                        <audio id="fire" preload="auto" loop><source class="mp4rain" src="fire.wav" type="audio/wav"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="soundContainer">
+                <div class="inner">
+                    <button class="imageContainer">
+						<div class="loader">
+							<img src="tsunami.png" height="82" width="82" alt="Loading Icon">
+						</div>
+					</button>
+                    <h3>Waves</h3>
+                    <div class="soundSlider">
+                        <span>
+							<input type="range" oninput="setVolumeWave()" class="slider" id="wavesV" min="0" max="1" step=".02" value=".5">
+						</span>
+                    </div>
+                </div>
+                <div class="soundPlayer">
+                    <div>
+                        <audio id="wave" preload="auto" loop><source class="mp4rain" src="waves.mp3" type="audio/mp3"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="soundContainer">
+                <div class="inner">
+                    <button class="imageContainer">
+						<div class="loader">
+							<img src="autumn.png" height="82" width="82" alt="Loading Icon">
+						</div>
+					</button>
+                    <h3>Leaves</h3>
+                    <div class="soundSlider">
+                        <span>
+							<input type="range" oninput="setVolumeLeaves()" class="slider" id="leavesV" min="0" max="1" step=".02" value=".5">
+						</span>
+                    </div>
+                </div>
+                <div class="soundPlayer">
+                    <div>
+                        <audio id="leaves" preload="auto" loop><source class="mp4rain" src="leaves.wav" type="audio/wav"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>More Sounds are coming soon</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

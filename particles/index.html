@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Matter.js Gravity Playground</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- 
+Matter JS Gravity Experiment
+http://brm.io/matter-js/
+
+-->
+    <div id="controls">
+        <div class="nav">
+            <ul class="nav">
+                <li><a class="active" href="#home">Gravity</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="maindiv">
+            <div id="x-axis" class="axis">
+                <label for="gravity-x">x-axis</label>
+                <input id="gravity-x" type="range" value="0" min="-1" max="1" step=".1" oninput="gravOutputUpdate('x-val', 'x', value);">
+                <ouput for="gravity-x" id="x-val" class="output">0</output>
+            </div>
+
+            <div id="y-axis" class="axis">
+                <label for="gravity-y">y-axis</label>
+                <input id="gravity-y" type="range" value=".1" min="-1" max="1" step=".1" oninput="gravOutputUpdate('y-val', 'y', value)">
+                <output for="gravity-y" id="y-val" class="output">.1</output>
+            </div>
+        </div>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='matter-js-master/build/matter.js' type="text/javascript"></script>
+
+
+
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
